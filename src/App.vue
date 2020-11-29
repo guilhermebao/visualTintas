@@ -1,28 +1,69 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" :class="{ 'hide-menu': !isMenuVisible || !user, 'hide-header': !user }">
+    <Header/>
+    <Menu v-if="user" />
+    <Content v-else />
+    <Footer />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import Header from "@/components/template/Header";
+import Menu from "@/components/template/Menu";
+import Content from "@/components/template/Content";
+import Footer from "@/components/template/Footer";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  title: "visual tintas",
+  name: "App",
+  components: { Header, Menu, Content, Footer },
+  data: function() {
+    return {
+      isMenuVisible: false,
+      user: true
+    };
+  },
+  methods: {
+  },
+  created() {
   }
-}
+};
 </script>
 
 <style>
+* {
+  font-family: "Lato, sans-serif";
+}
+
+body {
+  margin: 0;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 70px 1fr 40px;
+  grid-template-columns: 300px 1fr;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "menu footer";
+}
+
+#app.hide-menu {
+  grid-template-areas:
+    "header header"
+    "content content"
+    "footer footer";
+}
+
+#app.hide-header {
+  grid-template-areas:
+    "content content"
+    "content content"
+    "footer footer";
 }
 </style>
