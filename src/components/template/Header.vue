@@ -1,36 +1,51 @@
 <template>
   <div class="header">
     <div class="logo">
+      
+      <div class="toggle d-sm-none" @click="toggleMenu">
+        <i class="fa fa-bars"></i>
+      </div>
+
       <img src="../../assets/logo.png" alt="aaaaaaaa" />
     </div>
 
-    <div class="buttons">
-      <button>EMPRESA</button>
-      <button>PRODUTOS</button>
-      <button>CONTATO</button>
+    <div class="buttons d-none d-sm-block">
+      <span>EMPRESA</span>
+      <span>PRODUTOS</span>
+      <span>CONTATO</span>
     </div>
 
     <div class="right-buttons">
+
       <div class="seach-bar">
-        <i class="fa fa fa-search"></i>
+        <i class="fa fa-search"></i>
       </div>
-      <div class="cart">
+
+      <div class="user-singin d-none d-sm-block" v-if="user">
+        <span>LOGIN</span>
+      </div>
+      <div class="cart d-none d-sm-block" v-else>
         <i class="fa fa-shopping-cart"></i>
       </div>
-      <div class="user-drop-down">
-        <UserDropDown/>
+
+      <div class="user-singup d-none d-sm-block" v-if="user">
+        <span>CADASTRE-SE</span>
       </div>
+      <div class="user-drop-down d-none d-sm-block" v-else>
+        <UserDropDown />
+      </div>
+
     </div>
-    
   </div>
 </template>
 
 <script>
-import UserDropDown from './UserDropDown'
+import UserDropDown from "./UserDropDown";
+import { mapState } from "vuex";
 
 export default {
   name: "Header",
-  components: {UserDropDown},
+  components: { UserDropDown },
   props: {
     tittle: String,
     hideToggle: Boolean
@@ -38,9 +53,14 @@ export default {
   computed: {
     icon() {
       return "fa-angle-left";
-    }
+    },
+    ...mapState(["user"])
   },
-  methods: {}
+  methods: {
+    toggleMenu() {
+      this.$store.commit('toggleMenu')
+    }
+  }
 };
 </script>
 
@@ -56,8 +76,9 @@ export default {
 .logo {
   width: 10%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  font-size: 1.5rem;
 }
 
 .logo > img {
@@ -71,8 +92,12 @@ export default {
   align-items: center;
 }
 
+.buttons > span {
+  padding: 10px;
+}
+
 .right-buttons {
-  width: 10%;
+  width: 15%;
   display: flex;
   justify-content: space-between;
   align-items: center;

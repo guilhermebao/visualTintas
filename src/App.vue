@@ -13,15 +13,15 @@ import Header from "@/components/template/Header";
 import Menu from "@/components/template/Menu";
 import Content from "@/components/template/Content";
 import Footer from "@/components/template/Footer";
+import { mapState } from 'vuex'
 
 export default {
   title: "visual tintas",
   name: "App",
   components: { Header, Menu, Content, Footer },
+  computed: mapState(['isMenuVisible', 'user']),
   data: function() {
     return {
-      isMenuVisible: false,
-      user: true
     };
   },
   methods: {
