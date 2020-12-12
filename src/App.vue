@@ -2,7 +2,7 @@
   <div id="app" :class="{ 'hide-menu': !isMenuVisible || !user, 'hide-header': !user }">
     <Header/>
     <Menu v-if="user" />
-    <Content v-else />
+    <Content/>
     <Footer />
   </div>
 </template>

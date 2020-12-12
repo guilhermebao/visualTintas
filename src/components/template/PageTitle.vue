@@ -14,6 +14,7 @@ export default {
 
 <style>
 .page-title h1 {
+  text-align: center;
   margin: 0px;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-      <router-view/>
+    <router-view/>
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
 <style>
     .content {
         grid-area: content;
-        background-color: #efefef;
+        background-color: #FFF;
         padding: 20px;
         overflow-y: scroll
     }

@@ -29,7 +29,7 @@
       </div>
 
       <div class="user-singup d-none d-sm-block" v-if="user">
-        <span>CADASTRE-SE</span>
+        <router-link to="/register"><span>CADASTRE-SE</span></router-link>
       </div>
       <div class="user-drop-down d-none d-sm-block" v-else>
         <UserDropDown />
