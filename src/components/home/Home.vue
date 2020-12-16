@@ -3,16 +3,16 @@
     <div class="carrousel-area">
       <Carousel :perPage="1" :loop="true" :centerMode="true">
         <Slide
-          ><img src="https://picsum.photos/1501/600" class="carrousel-image" alt=""
+          ><img src="https://picsum.photos/1501/600" class="carousel-image" alt=""
         /></Slide>
         <Slide
-          ><img src="https://picsum.photos/1502/600" class="carrousel-image" alt=""
+          ><img src="https://picsum.photos/1502/600" class="carousel-image" alt=""
         /></Slide>
         <Slide
-          ><img src="https://picsum.photos/1503/600" class="carrousel-image" alt=""
+          ><img src="https://picsum.photos/1503/600" class="carousel-image" alt=""
         /></Slide>
         <Slide
-          ><img src="https://picsum.photos/1504/600" class="carrousel-image" alt=""
+          ><img src="https://picsum.photos/1504/600" class="carousel-image" alt=""
         /></Slide>
       </Carousel>
     </div>
@@ -45,7 +45,7 @@ export default {
 </script>
 
 <style>
-.carrousel-image {
+.carousel-image {
   width: 100%;
 }
 </style>

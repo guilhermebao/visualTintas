@@ -40,7 +40,7 @@
 
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-      <h1 class="logo mr-auto"><a href="#">Logo</a></h1>
+      <h1 class="logo mr-auto"><a href="/">Logo</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -51,14 +51,15 @@
           <li><a href="#">CONTATO</a></li>
         </ul>
       </nav>
-      <nav class="nav-menu d-none d-lg-block">
+      <nav class="nav-menu d-none d-lg-block" v-if="!user">
         <ul>
           <li><a href="#">LOGIN</a></li>
         </ul>
       </nav>
-      <UserDropDown />
+      <UserDropDown v-if="user"/>
       <!-- .nav-menu -->
-      <a href="#about" class="get-started-btn scrollto">Cadastre-se</a>
+      <a href="/register" class="get-started-btn scrollto" v-if="!user">Cadastre-se</a>
+
     </div>
   </header>
   <!-- End Header -->
