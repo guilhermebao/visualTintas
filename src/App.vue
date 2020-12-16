@@ -1,5 +1,6 @@
 <template>
   <div id="app" :class="{ 'hide-menu': !isMenuVisible || !user, 'hide-header': !user }">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <Header/>
     <Menu v-if="user" />
     <Content/>
@@ -32,14 +33,25 @@ export default {
 </script>
 
 <style>
-* {
-  font-family: "Lato, sans-serif";
-}
-
 body {
-  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
 }
 
+a {
+  color: #47b2e4;
+}
+
+a:hover {
+  color: #73c5eb;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Jost", sans-serif;
+}
+
+/* 
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -65,5 +77,5 @@ body {
     "content content"
     "content content"
     "footer footer";
-}
+} */
 </style>

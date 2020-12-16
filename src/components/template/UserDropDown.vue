@@ -1,5 +1,5 @@
 <template>
-  <div class="user-dropdown">
+  <div class="user-dropdown pl-4">
     <div class="user-button">
         <i class="fa fa-user"></i>
     </div>
@@ -72,8 +72,10 @@ export default {
 
 .user-dropdown-content a {
   text-decoration: none;
-  color: #000;
+  color: #001023;
   padding: 5px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .user-dropdown-content router-link {

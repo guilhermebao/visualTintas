@@ -15,6 +15,6 @@ export default {
         grid-area: content;
         background-color: #FFF;
         /* padding: 20px; */
-        overflow-y: scroll
+        /* overflow-y: scroll */
     }
 </style>
