@@ -1,7 +1,9 @@
 <template>
   <div class="company">
     <PageTitle main="Quem somos" />
-    <img src="https://picsum.photos/800/300" style="company-image" alt="IMAGEM EMPRESA">
+    <div align="center">
+      <img src="https://picsum.photos/800/300" alt="IMAGEM EMPRESA">
+    </div>
     <p>A VISUAL TINTAS é uma Loja moderna, que oferece um serviço agil e sério, com um sistema de preparação de infinitas cores automotivas nacionais e importadas, aliada ainda à qualidade e tecnologia dos produtos de fornecedores conceituados.</p>
     <p>Fundada em 1991, com o nome de LOJA DOS REPAROS,focando alinha de pequenos reparos residenciais e ferramentas em linha geral. esta sempre visando a satisfação dos seus clientes e acompanhando a evolução do mercado e a necessidade da clientela.</p>
     <p>Em meados de 1997 nasceu a VISUAL TINTAS, visando atender a necessidade de uma clientela exigente na area de repintura automotiva.</p>
@@ -25,8 +27,4 @@ export default {
 </script>
 
 <style>
-.company-image {
-  position: relative;
-  left: 50%;
-}
 </style>

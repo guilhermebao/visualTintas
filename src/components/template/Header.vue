@@ -38,7 +38,7 @@
     </div>
   </div> -->
 
-  <header id="header" class="fixed-top">
+  <header id="header" class="sticky-top">
     <div class="container d-flex align-items-center">
       <h1 class="logo mr-auto"><a href="/">Logo</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
