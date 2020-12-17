@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import Home from '@/components/home/Home'
 import Register from '@/components/user/Register'
 import Account from '@/components/user/Account'
+import Company from '@/components/company/Company'
 
 
 Vue.use(VueRouter)
@@ -22,6 +23,11 @@ const routes = [{
     name: 'account',
     path: '/account',
     component: Account
+},
+{
+    name: 'company',
+    path: '/company',
+    component: Company
 }]
 
 const router = new VueRouter({

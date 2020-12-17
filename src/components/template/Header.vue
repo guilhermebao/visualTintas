@@ -46,7 +46,7 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#">EMPRESA</a></li>
+          <li class="active"><a href="/company">EMPRESA</a></li>
           <li><a href="#">PRODUTOS</a></li>
           <li><a href="#">CONTATO</a></li>
         </ul>
