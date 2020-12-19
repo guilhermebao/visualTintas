@@ -40,7 +40,7 @@
 
   <header id="header" class="sticky-top">
     <div class="container d-flex align-items-center">
-      <h1 class="logo mr-auto"><a href="/">Logo</a></h1>
+      <img src="../../assets/logo-visual.png" alt=""/>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -187,11 +187,10 @@ export default {
   position: relative;
   color: #001023;
   transition: 0.3s;
-  font-size: 12px;
+  font-size: 18px;
   letter-spacing: 0.5px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
 }
 
 .nav-menu a:hover,

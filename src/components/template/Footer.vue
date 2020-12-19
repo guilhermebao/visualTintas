@@ -191,7 +191,6 @@ export default {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Jost", sans-serif;
   color: #5e5e5e;
 }
 
