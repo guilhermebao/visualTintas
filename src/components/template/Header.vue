@@ -38,9 +38,13 @@
     </div>
   </div> -->
 
-  <header id="header" class="sticky-top">
+  <header id="header" class="sticky-top shadow">
     <div class="container d-flex align-items-center">
+      <div class="toggle toggle-style d-sm-none mx-3" @click="toggleMenu">
+        <i class="fa fa-bars"></i>
+      </div>
       <img src="../../assets/logo-visual.png" alt=""/>
+      
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -51,15 +55,15 @@
           <li><a href="#">CONTATO</a></li>
         </ul>
       </nav>
-      <nav class="nav-menu d-none d-lg-block" v-if="!user">
-        <ul>
-          <li><a href="#">LOGIN</a></li>
-        </ul>
-      </nav>
-      <UserDropDown v-if="user"/>
-      <!-- .nav-menu -->
-      <a href="/register" class="get-started-btn scrollto" v-if="!user">Cadastre-se</a>
-
+        <nav class="nav-menu d-none d-lg-block" style="position: absolute; right: 270px;" v-if="!user">
+          <ul>
+            <li><a href="#">LOGIN</a></li>
+          </ul>
+        </nav>
+        <UserDropDown v-if="user"/>
+        <!-- .nav-menu -->
+        <img class="search-btn" src="../../assets/search-btn.png" alt=""/>
+        <a href="/register" class="get-started-btn scrollto" v-if="!user">Cadastre-se</a>
     </div>
   </header>
   <!-- End Header -->
@@ -187,7 +191,7 @@ export default {
   position: relative;
   color: #001023;
   transition: 0.3s;
-  font-size: 18px;
+  /* font-size: 18px; */
   letter-spacing: 0.5px;
   font-weight: 600;
   text-transform: uppercase;
@@ -288,11 +292,13 @@ export default {
   padding: 6px 25px 7px 25px;
   white-space: nowrap;
   transition: 0.3s;
-  font-size: 12px;
+  font-size: 1rem;
   display: inline-block;
   background-color: #0ab279;
   text-transform: uppercase;
   font-weight: 600;
+  position: absolute;
+  right: 85px;
 }
 
 .get-started-btn:hover {
@@ -300,10 +306,21 @@ export default {
   color: #fff;
 }
 
+.search-btn {
+  position: absolute; 
+  right: 350px;
+}
+
 @media (max-width: 768px) {
   .get-started-btn {
+    display: none;
     margin: 0 48px 0 0;
     padding: 6px 20px 7px 20px;
+  }
+  .search-btn {
+    display: block;
+    position: absolute;
+    right: 25px;
   }
 }
 
@@ -414,5 +431,9 @@ export default {
 
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
+}
+
+.toggle-style {
+  font-size: 24px;
 }
 </style>

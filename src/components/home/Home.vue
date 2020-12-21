@@ -72,6 +72,12 @@ export default {
 </script>
 
 <style>
+@media (max-width: 768px) {
+  .carousel-image {
+    width: auto !important
+  }
+}
+
 .carousel-image {
   width: 100%;
 }
