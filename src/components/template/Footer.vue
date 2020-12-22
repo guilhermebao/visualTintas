@@ -2,34 +2,37 @@
   <footer id="footer">
     <div class="footer-top">
       <div class="container-fluid">
-        <div class="row text-center">
-          <div class="col-6 col-md-4">
-            <img class="" src="../../assets/logo-footer.png" alt=""/>
+        <div class="row">
+          <div class="col-sm-8">
+            <img class="" src="../../assets/logo-footer.png" alt="" />
           </div>
-          <div class="col-6 col-md-4">
-            <div>Dúvidas Frequentes</div>
-          </div>
-          <div class="col-6 col-md-4">
-            <div>Fale Conosco</div>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-6 col-md-4">
-            <div>Formas de Pagamento</div>
-          </div>
-          <div class="col-6 col-md-4">
-            <div>Dúvidas Frequentes</div>
-          </div>
-          <div class="col-6 col-md-4">
-            <div>Fale Conosco</div>
+          <div class="col-sm-4">
+            <div class="footer-bottom clearfix">
+              <div class="credits">
+                <span class="tl-footer pr-4">Siga-nos</span>
+                <img class="pr-4" src="../../assets/insta.png" alt="" />
+                <img class="" src="../../assets/facebook.png" alt="" />
+              </div>
+            </div>
+            <div class="text-right content-footer">Rua Antônio Eustáquio Piazza, 3663, Tirol</div>
+            <div class="text-right content-footer">Belo Horizonte / MG</div>
           </div>
         </div>
-
-        <div class="container footer-bottom clearfix">
-          <div class="copyright">Logo</div>
-          <div class="credits">
-            <span class="">Siga-nos</span>
-            <i class="bx bxl-instagram"></i><i class="bx bxl-facebook"></i>
+        <div class="row">
+          <div class="hr-footer mt-5 mb-3"></div>
+          <div class="col-6 col-md-4">
+            <div class="tl-footer text-left pb-5">Formas de Pagamento</div>
+            <img src="../../assets/pagamentos.png" alt="" />
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="tl-footer text-center pb-5">Dúvidas Frequentes</div>
+            <div class="content-footer pb-3">Como Comprar</div>
+            <div class="content-footer pb-3">Polí­tica de Trocas</div>
+            <div class="content-footer pb-3">Polí­tica de Entrega</div>
+            <div class="content-footer pb-3">Polí­tica de Segurança</div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="tl-footer text-center">Fale Conosco</div>
           </div>
         </div>
       </div>
@@ -107,7 +110,7 @@ export default {
 }
 
 #footer .footer-top {
-  padding: 60px 0 30px 0;
+  padding: 60px;
   background: #dbdee6;
 }
 
@@ -233,5 +236,23 @@ export default {
   #footer .credits {
     padding-top: 4px;
   }
+}
+
+.tl-footer {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #031727;
+}
+
+.hr-footer {
+  width: 100%;
+  height: 1px;
+  background-color: #C6C6C7;
+}
+
+.content-footer {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
 }
 </style>
