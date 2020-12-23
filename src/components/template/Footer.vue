@@ -24,15 +24,30 @@
             <div class="tl-footer text-left pb-5">Formas de Pagamento</div>
             <img src="../../assets/pagamentos.png" alt="" />
           </div>
+          <!-- <span class="hr-h-footer"></span> -->
           <div class="col-6 col-md-4">
-            <div class="tl-footer text-center pb-5">Dúvidas Frequentes</div>
+            <div class="tl-footer text-left pb-5">Dúvidas Frequentes</div>
             <div class="content-footer pb-3">Como Comprar</div>
             <div class="content-footer pb-3">Polí­tica de Trocas</div>
             <div class="content-footer pb-3">Polí­tica de Entrega</div>
             <div class="content-footer pb-3">Polí­tica de Segurança</div>
           </div>
+          <!-- <span class="hr-h-footer"></span> -->
           <div class="col-6 col-md-4">
-            <div class="tl-footer text-center">Fale Conosco</div>
+            <div class="tl-footer text-left pb-5">Fale Conosco</div>
+            <div class="text-left pb-3">
+              <img class="pr-4" src="../../assets/tel.png" alt="" />
+              <span class="content-footer pb-3">(31) 99733-8710</span>
+            </div>
+            <div class="text-left pb-3">
+              <img class="pr-4" src="../../assets/phone.png" alt="" />
+              <span class="content-footer pb-3">(31) 3385-1365</span><br>
+              <span class="content-footer pb-3 pl-5">(31) 3385-1365</span>
+            </div>
+            <div class="text-left pb-3">
+              <img class="pr-4" src="../../assets/email.png" alt="" />
+              <span class="content-footer pb-3">vendas@visualtintas.com</span>
+            </div>
           </div>
         </div>
       </div>
@@ -254,5 +269,11 @@ export default {
 .content-footer {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
+}
+
+.hr-h-footer {
+  width: 1px;
+  height: 247px;
+  background-color: #C6C6C7;
 }
 </style>
