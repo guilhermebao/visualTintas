@@ -2,98 +2,54 @@
   <footer id="footer">
     <div class="footer-top">
       <div class="container-fluid">
-        <!-- <div class="row">
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Logo</h3>
+        <div class="row">
+          <div class="col-sm-8">
+            <img class="" src="../../assets/logo-footer.png" alt="" />
           </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <ul>
-              <li>
-                <h4>Siga-nos</h4>
-                <i class="bx bxl-instagram"></i> <i class="bx bxl-facebook"></i>
-              </li>
-              <li><span>Rua X</span></li>
-              <li><span>Belo Horizonte / MG</span></li>
-            </ul>
-          </div>
-        </div> -->
-
-        <div class="container footer-bottom clearfix">
-          <div class="copyright">Logo</div>
-          <div class="credits">
-            <span class="">Siga-nos</span>
-            <i class="bx bxl-instagram"></i><i class="bx bxl-facebook"></i>
+          <div class="col-sm-4">
+            <div class="footer-bottom clearfix">
+              <div class="credits">
+                <span class="tl-footer pr-4">Siga-nos</span>
+                <img class="pr-4" src="../../assets/insta.png" alt="" />
+                <img class="" src="../../assets/facebook.png" alt="" />
+              </div>
+            </div>
+            <div class="text-right content-footer">Rua Antônio Eustáquio Piazza, 3663, Tirol</div>
+            <div class="text-right content-footer">Belo Horizonte / MG</div>
           </div>
         </div>
-        <div class="container-fluid">
-          <div class="row text-center">
-            <div class="col-6 col-md-4">
-              <div>Formas de Pagamento</div>
+        <div class="row">
+          <div class="hr-footer mt-5 mb-3"></div>
+          <div class="col-6 col-md-4">
+            <div class="tl-footer text-left pb-5">Formas de Pagamento</div>
+            <img src="../../assets/pagamentos.png" alt="" />
+          </div>
+          <!-- <span class="hr-h-footer"></span> -->
+          <div class="col-6 col-md-4">
+            <div class="tl-footer text-left pb-5">Dúvidas Frequentes</div>
+            <div class="content-footer pb-3">Como Comprar</div>
+            <div class="content-footer pb-3">Polí­tica de Trocas</div>
+            <div class="content-footer pb-3">Polí­tica de Entrega</div>
+            <div class="content-footer pb-3">Polí­tica de Segurança</div>
+          </div>
+          <!-- <span class="hr-h-footer"></span> -->
+          <div class="col-6 col-md-4">
+            <div class="tl-footer text-left pb-5">Fale Conosco</div>
+            <div class="text-left pb-3">
+              <img class="pr-4" src="../../assets/tel.png" alt="" />
+              <span class="content-footer pb-3">(31) 99733-8710</span>
             </div>
-            <div class="col-6 col-md-4">
-              <div>Dúvidas Frequentes</div>
+            <div class="text-left pb-3">
+              <img class="pr-4" src="../../assets/phone.png" alt="" />
+              <span class="content-footer pb-3">(31) 3385-1365</span><br>
+              <span class="content-footer pb-3 pl-5">(31) 3385-1365</span>
             </div>
-            <div class="col-6 col-md-4">
-              <div>Fale Conosco</div>
+            <div class="text-left pb-3">
+              <img class="pr-4" src="../../assets/email.png" alt="" />
+              <span class="content-footer pb-3">vendas@visualtintas.com</span>
             </div>
           </div>
         </div>
-        <!-- <div class="row ">
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li>
-                <i class="bx bx-chevron-right"></i> <a href="#">Web Design</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Web Development</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Product Management</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i> <a href="#">Marketing</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Graphic Design</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>
-              Cras fermentum odio eu feugiat lide par naso tierra videa magna
-              derita valies
-            </p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>
-              Cras fermentum odio eu feugiat lide par naso tierra videa magna
-              derita valies
-            </p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
   </footer>
@@ -169,7 +125,7 @@ export default {
 }
 
 #footer .footer-top {
-  padding: 60px 0 30px 0;
+  padding: 60px;
   background: #dbdee6;
 }
 
@@ -191,7 +147,6 @@ export default {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Jost", sans-serif;
   color: #5e5e5e;
 }
 
@@ -296,5 +251,29 @@ export default {
   #footer .credits {
     padding-top: 4px;
   }
+}
+
+.tl-footer {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #031727;
+}
+
+.hr-footer {
+  width: 100%;
+  height: 1px;
+  background-color: #C6C6C7;
+}
+
+.content-footer {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+
+.hr-h-footer {
+  width: 1px;
+  height: 247px;
+  background-color: #C6C6C7;
 }
 </style>

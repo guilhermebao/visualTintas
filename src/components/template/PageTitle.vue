@@ -1,7 +1,6 @@
 <template>
   <div class="page-title">
     <h1>{{ main }}</h1>
-    <hr />
   </div>
 </template>
 

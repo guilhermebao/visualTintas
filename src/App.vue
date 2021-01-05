@@ -1,6 +1,10 @@
 <template>
   <div id="app" :class="{ 'hide-menu': !isMenuVisible || !user, 'hide-header': !user }">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <Header/>
     <Menu v-if="user" />
     <Content/>
@@ -33,9 +37,8 @@ export default {
 </script>
 
 <style>
-body {
-  font-family: "Open Sans", sans-serif;
-  color: #444444;
+* {
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -47,35 +50,15 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Jost", sans-serif;
+.pr-10 {
+  padding-right: 10px;
 }
 
-/* 
-#app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 70px 1fr 40px;
-  grid-template-columns: 300px 1fr;
-  grid-template-areas:
-    "header header"
-    "menu content"
-    "menu footer";
+.pb-2-4r {
+  padding-bottom: 2.4rem;
 }
 
-#app.hide-menu {
-  grid-template-areas:
-    "header header"
-    "content content"
-    "footer footer";
+.pb-8 {
+  padding-bottom: 8rem;
 }
-
-#app.hide-header {
-  grid-template-areas:
-    "content content"
-    "content content"
-    "footer footer";
-} */
 </style>
