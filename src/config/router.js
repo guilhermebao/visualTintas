@@ -5,6 +5,7 @@ import Home from '@/components/home/Home'
 import Register from '@/components/user/Register'
 import Account from '@/components/user/Account'
 import Company from '@/components/company/Company'
+import ProductList from '@/components/product/ProductList'
 
 
 Vue.use(VueRouter)
@@ -28,7 +29,13 @@ const routes = [{
     name: 'company',
     path: '/company',
     component: Company
-}]
+},
+{
+    name: 'product',
+    path: '/product',
+    component: ProductList
+}
+]
 
 const router = new VueRouter({
     mode: 'history',

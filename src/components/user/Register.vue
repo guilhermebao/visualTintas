@@ -1,11 +1,7 @@
 <template>
   <div class="register">
     <div class="container-fluid input-grupo pt-5">
-    <PageTitle main="" />
-    <div class="externa pt-5">
-        <div class="line mb-4"></div>
-      </div>
-    <p class="p40 pb-5">Minha Conta</p>
+    <PageTitle main="Cadastre-se" />
     <div class="register-form form-group">
       <input
         class="form-control input__ mb-4"

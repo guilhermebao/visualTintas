@@ -44,11 +44,8 @@
       </div>
     </div>
     <div class="container-fluid pt-5">
-      <div class="externa pt-5">
-        <div class="line mb-4"></div>
-      </div>
-      <p class="p40">Produto</p>
-
+    
+    <PageTitle main="Produto" />
       <div class="carrousel-area pt-5">
         <Carousel :perPage="1" :loop="true" :centerMode="true">
           <Slide>
