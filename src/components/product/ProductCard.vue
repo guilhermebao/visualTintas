@@ -1,11 +1,11 @@
 <template>
   <div class="product-card">
     <div class="item-card card text-center">
-      <div class="card-body">
+      <a href="/product/1" class="card-body">
         <img class="card-img-top" :src="image" alt="image" />
         <h5 class="card-title">{{ main }}</h5>
         <h6 class="card-subtitle mb-2 text-muted">{{ sub }}</h6>
-      </div>
+      </a>
     </div>
   </div>
 </template>
@@ -21,7 +21,11 @@ export default {
 .product-card {
   padding: 20px;
   width: 240px;
-  
+}
+
+.product-card a {
+  color: #001023;
+  text-decoration: none;
 }
 
 .product-card img {

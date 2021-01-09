@@ -6,7 +6,7 @@ import Register from '@/components/user/Register'
 import Account from '@/components/user/Account'
 import Company from '@/components/company/Company'
 import ProductList from '@/components/product/ProductList'
-
+import Product from '@/components/product/Product'
 
 Vue.use(VueRouter)
 
@@ -31,9 +31,14 @@ const routes = [{
     component: Company
 },
 {
-    name: 'product',
+    name: 'productList',
     path: '/product',
     component: ProductList
+},
+{
+    name: 'product',
+    path: '/product/:id',
+    component: Product
 }
 ]
 
