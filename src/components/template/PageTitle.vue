@@ -1,6 +1,9 @@
 <template>
   <div class="page-title">
-    <h1>{{ main }}</h1>
+    <div class="externa pt-5">
+      <div class="line mb-4"></div>
+    </div>
+    <p class="p40 pb-5">{{main}}</p>
   </div>
 </template>
 
@@ -12,8 +15,4 @@ export default {
 </script>
 
 <style>
-.page-title h1 {
-  text-align: center;
-  margin: 0px;
-}
 </style>

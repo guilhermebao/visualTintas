@@ -43,15 +43,17 @@
       <div class="toggle toggle-style d-sm-none mx-3" @click="toggleMenu">
         <i class="fa fa-bars"></i>
       </div>
-      <img src="../../assets/logo-visual.png" alt=""/>
-      
+      <a href="/">
+        <img src="../../assets/logo-visual.png" alt=""/>
+      </a>
+
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="/company">EMPRESA</a></li>
-          <li><a href="#">PRODUTOS</a></li>
+          <li><a href="/product">PRODUTOS</a></li>
           <li><a href="#">CONTATO</a></li>
         </ul>
       </nav>

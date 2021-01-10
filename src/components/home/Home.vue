@@ -2,30 +2,10 @@
   <div class="home">
     <div class="carrousel-area bg-grey-one">
       <Carousel :perPage="1" :loop="true" :centerMode="true">
-        <Slide
-          ><img
-            src="https://picsum.photos/1501/600"
-            class="carousel-image"
-            alt=""
-        /></Slide>
-        <Slide
-          ><img
-            src="https://picsum.photos/1502/600"
-            class="carousel-image"
-            alt=""
-        /></Slide>
-        <Slide
-          ><img
-            src="https://picsum.photos/1503/600"
-            class="carousel-image"
-            alt=""
-        /></Slide>
-        <Slide
-          ><img
-            src="https://picsum.photos/1504/600"
-            class="carousel-image"
-            alt=""
-        /></Slide>
+        <Slide> <img src="https://picsum.photos/1501/600" class="carousel-image" alt=""/> </Slide>
+        <Slide> <img src="https://picsum.photos/1502/600" class="carousel-image" alt=""/> </Slide>
+        <Slide> <img src="https://picsum.photos/1503/600" class="carousel-image" alt=""/> </Slide>
+        <Slide> <img src="https://picsum.photos/1504/600" class="carousel-image" alt="" /> </Slide>
       </Carousel>
     </div>
     <div class="container-fluid bg-grey-one">
@@ -64,11 +44,8 @@
       </div>
     </div>
     <div class="container-fluid pt-5">
-      <div class="externa pt-5">
-        <div class="line mb-4"></div>
-      </div>
-      <p class="p40">Produto</p>
-
+    
+    <PageTitle main="Produto" />
       <div class="carrousel-area pt-5">
         <Carousel :perPage="1" :loop="true" :centerMode="true">
           <Slide>
@@ -107,10 +84,11 @@
 
 <script>
 import { Carousel, Slide } from "vue-carousel";
+import PageTitle from "../template/PageTitle";
 
 export default {
   name: "Home",
-  components: { Carousel, Slide },
+  components: { Carousel, Slide, PageTitle },
 
   data: function () {
     return {

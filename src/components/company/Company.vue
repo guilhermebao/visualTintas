@@ -1,11 +1,9 @@
 <template>
   <div class="company">
     <div class="container-fluid pt-5">
-      <PageTitle main="" />
-      <div class="externa pt-5">
-        <div class="line mb-4"></div>
-      </div>
-      <p class="p40 pb-5">Quem somos</p>
+      
+      <PageTitle main="Quem somos" />
+
       <div align="center">
         <img class="img-empresa" src="../../assets/banner_2.png" alt="IMAGEM EMPRESA" />
       </div>
