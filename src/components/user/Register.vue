@@ -81,9 +81,13 @@
         placeHolder="Código do Cliente"
       />
     </div>
-    <div class="register-buttons">
-        <button>Cadastrar</button>
+    <div class="register-buttons mb-5">
+        <button class="bt-vittin shadow" style="width: 240px; margin-top: 90px;">
+              
+              Cadastrar
+            </button>
     </div>
+    
     </div>
   </div>
 </template>
