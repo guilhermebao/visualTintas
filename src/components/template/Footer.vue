@@ -1,52 +1,53 @@
 <template>
   <footer id="footer">
-    <div class="footer-top">
+    <div class="footer-top" style="margin-top: 162px;">
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-8">
-            <img class="" src="../../assets/logo-footer.png" alt="" />
+            <img class="logo-footer" src="../../assets/logo-footer.png" alt="" />
           </div>
           <div class="col-sm-4">
             <div class="footer-bottom clearfix">
               <div class="credits">
                 <span class="tl-footer pr-4">Siga-nos</span>
-                <img class="pr-4" src="../../assets/insta.png" alt="" />
-                <img class="" src="../../assets/facebook.png" alt="" />
+                <img class="pr-4 img-insta" src="../../assets/insta.png" alt="" />
+                <img class="img-facebook" src="../../assets/facebook.png" alt="" />
               </div>
             </div>
-            <div class="text-right content-footer">Rua Antônio Eustáquio Piazza, 3663, Tirol</div>
-            <div class="text-right content-footer">Belo Horizonte / MG</div>
+            <div class="co2 content-footer">Rua Antônio Eustáquio Piazza, 3663, Tirol</div>
+            <div class="co2 content-footer">Belo Horizonte / MG</div>
           </div>
         </div>
         <div class="row">
           <div class="hr-footer mt-5 mb-3"></div>
-          <div class="col-6 col-md-4">
-            <div class="tl-footer text-left pb-5">Formas de Pagamento</div>
-            <img src="../../assets/pagamentos.png" alt="" />
+          <div class="col-md-4 col-sm-12">
+            <div class="tl-footer text-left padding-tl-footer">Formas de Pagamento</div>
+            <img class="img-pagamentos" src="../../assets/pagamentos.png" alt="" />
           </div>
           <!-- <span class="hr-h-footer"></span> -->
-          <div class="col-6 col-md-4">
-            <div class="tl-footer text-left pb-5">Dúvidas Frequentes</div>
-            <div class="content-footer pb-3">Como Comprar</div>
-            <div class="content-footer pb-3">Polí­tica de Trocas</div>
-            <div class="content-footer pb-3">Polí­tica de Entrega</div>
-            <div class="content-footer pb-3">Polí­tica de Segurança</div>
+          <div class="_hr-footer"></div>
+          <div class="col-md-4 col-sm-12">
+            <div class="tl-footer text-left padding-tl-footer">Dúvidas Frequentes</div>
+            <div class="_co2 content-footer pb-3">Como Comprar</div>
+            <div class="_co2 content-footer pb-3">Polí­tica de Trocas</div>
+            <div class="_co2 content-footer pb-3">Polí­tica de Entrega</div>
+            <div class="_co2 content-footer pb-3">Polí­tica de Segurança</div>
           </div>
-          <!-- <span class="hr-h-footer"></span> -->
-          <div class="col-6 col-md-4">
-            <div class="tl-footer text-left pb-5">Fale Conosco</div>
+          <div class="_hr-footer"></div>
+          <div class="col-md-4 col-sm-12">
+            <div class="tl-footer text-left padding-tl-footer">Fale Conosco</div>
             <div class="text-left pb-3">
-              <img class="pr-4" src="../../assets/tel.png" alt="" />
-              <span class="content-footer pb-3">(31) 99733-8710</span>
+              <img class="pr-4 img-insta" src="../../assets/tel.png" alt="" />
+              <span class="co2 content-footer pb-3">(31) 99733-8710</span>
             </div>
             <div class="text-left pb-3">
-              <img class="pr-4" src="../../assets/phone.png" alt="" />
-              <span class="content-footer pb-3">(31) 3385-1365</span><br>
-              <span class="content-footer pb-3 pl-5">(31) 3385-1365</span>
+              <img class="pr-4 img-insta" src="../../assets/phone.png" alt="" />
+              <span class="co2 content-footer pb-3">(31) 3385-1365</span><br>
+              <span class="co2 content-footer pb-3 pl-5">(31) 3385-1365</span>
             </div>
             <div class="text-left pb-3">
-              <img class="pr-4" src="../../assets/email.png" alt="" />
-              <span class="content-footer pb-3">vendas@visualtintas.com</span>
+              <img class="pr-4 img-insta" src="../../assets/email.png" alt="" />
+              <span class="co2 content-footer pb-3">vendas@visualtintas.com</span>
             </div>
           </div>
         </div>
@@ -238,21 +239,6 @@ export default {
   transition: 0.3s;
 }
 
-@media (max-width: 768px) {
-  #footer .footer-bottom {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  #footer .copyright,
-  #footer .credits {
-    text-align: center;
-    float: none;
-  }
-  #footer .credits {
-    padding-top: 4px;
-  }
-}
-
 .tl-footer {
   font-size: 18px;
   font-weight: 600;
@@ -260,16 +246,84 @@ export default {
   color: #031727;
 }
 
-.hr-footer {
-  width: 100%;
-  height: 1px;
-  background-color: #C6C6C7;
+.co2 {
+  text-align: right !important;
 }
 
 .content-footer {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
 }
+
+.padding-tl-footer {
+  padding-bottom: 3rem
+}
+
+@media (max-width: 768px) {
+  #footer .footer-bottom {
+    padding-top: 9px;
+    padding-bottom: 20px;
+  }
+  #footer .copyright,
+  #footer .credits {
+    text-align: left;
+    float: none;
+  }
+  #footer .credits {
+    padding-top: 45px;
+  }
+  .logo-footer {
+    width: 220px;
+    margin-top: 45px;
+  }
+  #footer .footer-top {
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .tl-footer {
+    font-size: 13px;
+    font-weight: 200;
+  }
+  .img-facebook{
+    width: 17px;
+  }
+  .img-insta{
+    width: 40px;
+  }
+  .co2 {
+    text-align: left !important;
+    font-size: 13px !important;
+  }
+  ._co2 {
+    text-align: left;
+    font-size: 13px;
+  }
+  .img-pagamentos {
+    width: 180px;
+  }
+  .padding-tl-footer {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  ._hr-footer {
+    width: 100%;
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    background-color: #C6C6C7;
+  }
+}
+
+
+.hr-footer {
+  width: 100%;
+  height: 1px;
+  background-color: #C6C6C7;
+}
+
+
+
 
 .hr-h-footer {
   width: 1px;

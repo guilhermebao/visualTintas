@@ -1,7 +1,7 @@
 <template>
   <div class="Account">
     <PageTitle main="Produtos" />
-    <div class="input-grupo form-group row">
+    <div class="form-group row">
       <div class="input-group col">
         <input
           class="form-control border-right-0"
@@ -29,14 +29,16 @@
       </select>
     </div>
 
-    <div class="input-grupo products-area">
-      <ProductCard
-        v-for="(product, index) in products"
-        :key="index"
-        :main="product.title"
-        :sub="product.subTitle"
-        :image="product.image"
-      />
+    <div class="products-area">
+      <div class="container __flex align-items-center">
+        <ProductCard
+          v-for="(product, index) in products"
+          :key="index"
+          :main="product.title"
+          :sub="product.subTitle"
+          :image="product.image"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -98,5 +100,14 @@ export default {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+.__flex{
+  display: flex
+}
+
+@media (max-width: 375px) {
+  .__flex{
+  display: block
+}
 }
 </style>

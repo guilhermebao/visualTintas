@@ -163,6 +163,7 @@ export default {
 .p40 {
   font-size: 40px;
   text-align: center;
+  font-weight: 700;
 }
 
 .externa {

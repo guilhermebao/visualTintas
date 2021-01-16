@@ -1,5 +1,5 @@
 <template>
-  <div class="product-card">
+  <div class="product-card mx-3">
     <div class="item-card card text-center">
       <a href="/product/1" class="card-body">
         <img class="card-img-top" :src="image" alt="image" />
@@ -19,8 +19,8 @@ export default {
 
 <style>
 .product-card {
-  padding: 20px;
-  width: 240px;
+  min-width: 247px;
+  height: 302px;
 }
 
 .product-card a {
