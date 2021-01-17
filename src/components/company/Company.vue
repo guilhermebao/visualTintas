@@ -64,13 +64,15 @@ export default {
   padding-right: 80px;
   margin: 50px auto;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .img-empresa {
     width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .weare-area {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .text-p-mobile {
     font-size: 13px;

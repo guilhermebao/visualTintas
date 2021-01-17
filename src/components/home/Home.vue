@@ -17,8 +17,8 @@
             alt=""
           />
         </div>
-        <div class="col-md-6">
-          <div class="pl-5">
+        <div class="col-md-6 col-md-push-6">
+          <div class="_plr">
             <h1 class="text-h1 pb-2-4r">Vittin, a nossa Moeda Virtual</h1>
             <p class="text-p pb-5">
               Para facilitar suas compras Futuras. Adquira o valor que
@@ -101,12 +101,6 @@ export default {
 </script>
 
 <style>
-@media (max-width: 768px) {
-  .carousel-image {
-    width: auto !important;
-  }
-}
-
 .carousel-image {
   width: 100%;
 }
@@ -173,4 +167,29 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+._plr {
+  padding-left: 3rem;
+}
+
+@media (max-width: 768px) {
+  .carousel-image {
+    width: auto !important;
+  }
+  .text-p {
+    font-size: 13px;
+  }
+  ._plr {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .text-h1 {
+    font-size: 32px;
+  }
+  .bt-vittin {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
 </style>

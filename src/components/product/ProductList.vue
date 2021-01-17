@@ -1,7 +1,7 @@
 <template>
   <div class="Account">
     <PageTitle main="Produtos" />
-    <div class="form-group row">
+    <!-- <div class="form-group row">
       <div class="input-group col">
         <input
           class="form-control border-right-0"
@@ -27,9 +27,22 @@
           {{ category.text }}
         </option>
       </select>
-    </div>
+    </div> -->
 
-    <div class="products-area">
+    <div class="container-fluid">
+        <div class="row">
+          <div class="container __flex align-items-center">
+            <ProductCard
+            v-for="(product, index) in products"
+            :key="index"
+            :main="product.title"
+            :sub="product.subTitle"
+            :image="product.image"
+          />
+          </div>
+        </div>
+    </div>
+    <!-- <div class="products-area">
       <div class="container __flex align-items-center">
         <ProductCard
           v-for="(product, index) in products"
@@ -39,7 +52,7 @@
           :image="product.image"
         />
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -76,18 +89,18 @@ export default {
           image:
             "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTnRtY-ol6oRQUr9uNXi1uzi6ne7YmPPbulIGCB624_Ew1g5PG_2lXMiBP4vWlrDQ_fwfiOODKdL_QaSXiq8c-Qi8vb-BG7&usqp=CAE"
         },
-        {
-          title: "Pincel",
-          subTitle: "Cerda Branca",
-          image:
-            "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSEoKHVJltjXHvCWQb83FzN15OYQr2qqcPfEiGaTy_27DANmvlX6mJ0yOGjV2KakHZf7KjXqxnQVdGJWn8WC_fZPETWglCmTHU24n0TalKt8k34kh21Ex9uZlNT&usqp=CAE"
-        },
-        {
-          title: "Cola",
-          subTitle: "250ml",
-          image:
-            "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQcVHFpSNNmRtUKVbbm1ekvSlQDJfGVAPZwnLS3t5ZciUkz9_7epBQgD-DnTJRBuzwWUfM2_DpcQi5ZDeZBXFdZMqMd9KU6gFrsr8dWaiGZZpe3EkqFIRLo84I&usqp=CAE"
-        }
+        // {
+        //   title: "Pincel",
+        //   subTitle: "Cerda Branca",
+        //   image:
+        //     "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSEoKHVJltjXHvCWQb83FzN15OYQr2qqcPfEiGaTy_27DANmvlX6mJ0yOGjV2KakHZf7KjXqxnQVdGJWn8WC_fZPETWglCmTHU24n0TalKt8k34kh21Ex9uZlNT&usqp=CAE"
+        // },
+        // {
+        //   title: "Cola",
+        //   subTitle: "250ml",
+        //   image:
+        //     "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQcVHFpSNNmRtUKVbbm1ekvSlQDJfGVAPZwnLS3t5ZciUkz9_7epBQgD-DnTJRBuzwWUfM2_DpcQi5ZDeZBXFdZMqMd9KU6gFrsr8dWaiGZZpe3EkqFIRLo84I&usqp=CAE"
+        // }
       ]
     };
   }
