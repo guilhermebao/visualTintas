@@ -1,6 +1,6 @@
 <template>
   <div class="company">
-    <div class="container-fluid pt-5">
+    <div class="container-fluid pt-2">
       
       <PageTitle main="Quem somos" />
 
