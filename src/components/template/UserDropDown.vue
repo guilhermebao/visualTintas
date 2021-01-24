@@ -1,23 +1,23 @@
 <template>
   <div class="user-dropdown pl-4">
     <div class="user-button">
-        <i class="fa fa-user"></i>
+      <img style="height: 16px;" src="../../assets/user.png" alt="" />
     </div>
 
-    <div class="user-dropdown-content">
-      <router-link to="">
+    <div class="user-dropdown-content shadow mt-2">
+      <router-link to="" class="my-2">
         Usuário
       </router-link>
-      <router-link to="">
+      <router-link to="" class="my-2">
         V$ 0.00
       </router-link>
-      <router-link to="">
+      <router-link to="" class="my-2">
         Meus Orçamentos
       </router-link>
        <router-link to="">
         Comprar Vittin
       </router-link>
-      <a href @click.prevent="">Sair</a>
+      <a class="my-2" href @click.prevent="">Sair</a>
     </div>
 
   </div>
@@ -41,25 +41,24 @@ export default {
 <style>
 .user-dropdown {
   position: relative;
+  cursor: pointer;
 }
 
-.user-dropdown:hover {
+/* .user-dropdown:hover {
   background-color:#ededed;
-}
+} */
 
 .user-dropdown-content {
   position: absolute;
   right: 0px;
   background-color: #f9f9f9;
   min-width: 170px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 10px;
   z-index: 1;
-
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;

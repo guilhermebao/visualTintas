@@ -98,6 +98,11 @@ export default {
     margin-left: 12px;
     margin-right: 12px;
   }
+  .btn-shopping {
+    width: 100%;
+    font-size: 14px;
+    height: 51px;
+  }
 }
 
 </style>

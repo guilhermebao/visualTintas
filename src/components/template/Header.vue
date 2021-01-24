@@ -40,11 +40,11 @@
 
   <header id="header" class="sticky-top shadow">
     <div class="container d-flex align-items-center">
-      <div class="toggle toggle-style d-sm-none mx-3" @click="toggleMenu">
+      <!-- <div class="toggle toggle-style d-sm-none mx-3" @click="toggleMenu">
         <i class="fa fa-bars"></i>
-      </div>
-      <a href="/">
-        <img src="../../assets/logo-visual.png" alt=""/>
+      </div> -->
+      <a href="/" class="__ml-5">
+        <img class="logo_mobile" src="../../assets/logo-visual.png" alt="" />
       </a>
 
       <!-- Uncomment below if you prefer to use an image logo -->
@@ -57,15 +57,45 @@
           <li><a href="#">CONTATO</a></li>
         </ul>
       </nav>
-        <nav class="nav-menu d-none d-lg-block" style="position: absolute; right: 270px;" v-if="!user">
-          <ul>
-            <li><a href="#">LOGIN</a></li>
-          </ul>
-        </nav>
-        <UserDropDown v-if="user"/>
-        <!-- .nav-menu -->
-        <img class="search-btn" src="../../assets/search-btn.png" alt=""/>
-        <a href="/register" class="get-started-btn scrollto" v-if="!user">Cadastre-se</a>
+      <nav
+        class="nav-menu d-none d-lg-block"
+        style="position: absolute; right: 50px"
+        v-if="!user"
+      >
+        <!-- <ul>
+          <li><a href="#">LOGIN</a></li>
+        </ul> -->
+        <UserDropDown />
+      </nav>
+
+      
+      
+      <!-- .nav-menu -->
+      <!-- <img class="search-btn" src="../../assets/search-btn.png" alt="" /> -->
+      
+      <img class="__shopping" src="../../assets/shopping.png" alt="" />
+      <img class="__search" src="../../assets/search.png" alt="" />
+
+      <a href="/register" class="get-started-btn scrollto" v-if="user"
+        >Cadastre-se</a
+      >
+      <Slide left class="__menu">
+        <a id="home" href="#" style="margin-bottom: 20px">
+          <span
+            >Olá,<br /><span style="font-weight: 600">entre</span> ou
+            <span style="font-weight: 600">cadastre-se</span></span
+          >
+        </a>
+        <a href="/company">
+          <span>Empresa</span>
+        </a>
+        <a href="/product">
+          <span>Produtos</span>
+        </a>
+        <a href="/contact">
+          <span>Contato</span>
+        </a>
+      </Slide>
     </div>
   </header>
   <!-- End Header -->
@@ -74,10 +104,14 @@
 <script>
 import UserDropDown from "./UserDropDown";
 import { mapState } from "vuex";
+import { Slide } from "vue-burger-menu";
 
 export default {
   name: "Header",
-  components: { UserDropDown },
+  components: {
+    UserDropDown,
+    Slide,
+  },
   props: {
     tittle: String,
     hideToggle: Boolean,
@@ -195,8 +229,8 @@ export default {
   transition: 0.3s;
   /* font-size: 18px; */
   letter-spacing: 0.5px;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-weight: 400;
+ 
 }
 
 .nav-menu a:hover,
@@ -308,10 +342,6 @@ export default {
   color: #fff;
 }
 
-.search-btn {
-  position: absolute; 
-  right: 350px;
-}
 
 @media (max-width: 768px) {
   .get-started-btn {
@@ -438,4 +468,81 @@ export default {
 .toggle-style {
   font-size: 24px;
 }
+
+.bm-burger-button {
+  position: fixed;
+  width: 20px;
+  height: 18px;
+  top: 27px;
+  left: 31px;
+}
+
+.bm-burger-bars {
+  background-color: #001023;
+}
+
+.bm-menu {
+  background-color: white;
+  padding-top: 145px;
+}
+
+.bm-item-list > * {
+  display: flex;
+  text-decoration: none;
+  padding-bottom: 1.5rem;
+}
+
+.bm-item-list {
+  color: #b8b7ad;
+  font-weight: 500;
+}
+
+.bm-item-list > * > span {
+  font-family: "Poppins", sans-serif;
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #0f2648;
+}
+
+.bm-cross {
+  background: #0f2648;
+}
+
+.__menu {
+  display: none;
+}
+
+.__search {
+  position: absolute;
+  cursor: pointer;
+  height: 16px;
+  right: 150px;
+}
+
+.__shopping {
+  position: absolute;
+  cursor: pointer;
+  height: 16px;
+  right: 100px;
+}
+
+@media (max-width: 768px) {
+  .__ml-5 {
+    margin-left: 60px;
+  }
+  .__menu {
+    display: block;
+  }
+  .logo_mobile {
+    width: 100px;
+  }
+  .__search {
+    right: 22px;
+  }
+  .__shopping {
+    display: none;
+  }
+}
+
 </style>

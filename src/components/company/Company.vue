@@ -75,6 +75,7 @@ export default {
     padding-right: 15px;
   }
   .text-p-mobile {
+    font-family: "Raleway", sans-serif;
     font-size: 13px;
   }
 }
