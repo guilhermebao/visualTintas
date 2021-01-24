@@ -44,7 +44,7 @@
         <i class="fa fa-bars"></i>
       </div>
       <a href="/">
-        <img src="../../assets/logo-visual.png" alt=""/>
+        <img src="../../assets/logo-visual.png" alt="" />
       </a>
 
       <!-- Uncomment below if you prefer to use an image logo -->
@@ -57,15 +57,25 @@
           <li><a href="#">CONTATO</a></li>
         </ul>
       </nav>
-        <nav class="nav-menu d-none d-lg-block" style="position: absolute; right: 270px;" v-if="!user">
-          <ul>
-            <li><a href="#">LOGIN</a></li>
-          </ul>
-        </nav>
-        <UserDropDown v-if="user"/>
-        <!-- .nav-menu -->
-        <img class="search-btn" src="../../assets/search-btn.png" alt=""/>
-        <a href="/register" class="get-started-btn scrollto" v-if="!user">Cadastre-se</a>
+      <nav
+        class="nav-menu d-none d-lg-block"
+        style="position: absolute; right: 270px;"
+        v-if="!user"
+      >
+        <ul>
+          <li><a href="#">LOGIN</a></li>
+        </ul>
+      </nav>
+      <UserDropDown v-if="user" />
+
+      <a href="/budget" class="cart d-none d-sm-block" v-if="user">
+        <i class="fa fa-shopping-cart"></i>
+      </a>
+      <!-- .nav-menu -->
+      <img class="search-btn" src="../../assets/search-btn.png" alt="" />
+      <a href="/register" class="get-started-btn scrollto" v-if="!user"
+        >Cadastre-se</a
+      >
     </div>
   </header>
   <!-- End Header -->
@@ -80,19 +90,19 @@ export default {
   components: { UserDropDown },
   props: {
     tittle: String,
-    hideToggle: Boolean,
+    hideToggle: Boolean
   },
   computed: {
     icon() {
       return "fa-angle-left";
     },
-    ...mapState(["user"]),
+    ...mapState(["user"])
   },
   methods: {
     toggleMenu() {
       this.$store.commit("toggleMenu");
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -309,7 +319,7 @@ export default {
 }
 
 .search-btn {
-  position: absolute; 
+  position: absolute;
   right: 350px;
 }
 
