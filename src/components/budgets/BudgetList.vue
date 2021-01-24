@@ -1,6 +1,6 @@
 <template>
   <div class="Account">
-    <PageTitle main="Produtos" />
+    <PageTitle main="Meus Orçamentos" />
     <!-- <div class="form-group row">
       <div class="input-group col">
         <input

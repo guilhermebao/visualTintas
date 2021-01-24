@@ -60,7 +60,7 @@
       <nav
         class="nav-menu d-none d-lg-block"
         style="position: absolute; right: 50px"
-        v-if="!user"
+        v-if="user"
       >
         <!-- <ul>
           <li><a href="#">LOGIN</a></li>
@@ -72,11 +72,12 @@
       
       <!-- .nav-menu -->
       <!-- <img class="search-btn" src="../../assets/search-btn.png" alt="" /> -->
-      
-      <img class="__shopping" src="../../assets/shopping.png" alt="" />
+      <a href="/budget">
+        <img class="__shopping" src="../../assets/shopping.png" alt="" />
+      </a>
       <img class="__search" src="../../assets/search.png" alt="" />
 
-      <a href="/register" class="get-started-btn scrollto" v-if="user"
+      <a href="/register" class="get-started-btn scrollto" v-if="!user"
         >Cadastre-se</a
       >
       <Slide left class="__menu">
@@ -114,19 +115,19 @@ export default {
   },
   props: {
     tittle: String,
-    hideToggle: Boolean,
+    hideToggle: Boolean
   },
   computed: {
     icon() {
       return "fa-angle-left";
     },
-    ...mapState(["user"]),
+    ...mapState(["user"])
   },
   methods: {
     toggleMenu() {
       this.$store.commit("toggleMenu");
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -342,6 +343,10 @@ export default {
   color: #fff;
 }
 
+.search-btn {
+  position: absolute;
+  right: 350px;
+}
 
 @media (max-width: 768px) {
   .get-started-btn {
@@ -523,6 +528,7 @@ export default {
 .__shopping {
   position: absolute;
   cursor: pointer;
+  top: 30px;
   height: 16px;
   right: 100px;
 }

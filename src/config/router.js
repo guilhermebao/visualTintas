@@ -7,6 +7,7 @@ import Account from '@/components/user/Account'
 import Company from '@/components/company/Company'
 import ProductList from '@/components/product/ProductList'
 import Product from '@/components/product/Product'
+import Budget from '@/components/budgets/Budget'
 
 Vue.use(VueRouter)
 
@@ -39,6 +40,11 @@ const routes = [{
     name: 'product',
     path: '/product/:id',
     component: Product
+},
+{
+    name: 'budget',
+    path: '/budget',
+    component: Budget
 }
 ]
 
