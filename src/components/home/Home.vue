@@ -2,10 +2,34 @@
   <div class="home">
     <div class="carrousel-area bg-grey-one">
       <Carousel :perPage="1" :loop="true" :centerMode="true">
-        <Slide> <img src="https://picsum.photos/1501/600" class="carousel-image" alt=""/> </Slide>
-        <Slide> <img src="https://picsum.photos/1502/600" class="carousel-image" alt=""/> </Slide>
-        <Slide> <img src="https://picsum.photos/1503/600" class="carousel-image" alt=""/> </Slide>
-        <Slide> <img src="https://picsum.photos/1504/600" class="carousel-image" alt="" /> </Slide>
+        <Slide>
+          <img
+            src="https://picsum.photos/1501/600"
+            class="carousel-image"
+            alt=""
+          />
+        </Slide>
+        <Slide>
+          <img
+            src="https://picsum.photos/1502/600"
+            class="carousel-image"
+            alt=""
+          />
+        </Slide>
+        <Slide>
+          <img
+            src="https://picsum.photos/1503/600"
+            class="carousel-image"
+            alt=""
+          />
+        </Slide>
+        <Slide>
+          <img
+            src="https://picsum.photos/1504/600"
+            class="carousel-image"
+            alt=""
+          />
+        </Slide>
       </Carousel>
     </div>
     <div class="container-fluid bg-grey-one">
@@ -44,37 +68,20 @@
       </div>
     </div>
     <div class="container-fluid pt-5">
-    
-    <PageTitle main="Produto" />
+      <PageTitle main="Produto" />
       <div class="carrousel-area pt-5">
         <Carousel :perPage="1" :loop="true" :centerMode="true">
           <Slide>
-            <img
-              src="../../assets/produtos.png"
-
-              alt=""
-            />
+            <img src="../../assets/produtos.png" alt="" />
           </Slide>
           <Slide>
-            <img
-              src="../../assets/produtos.png"
-
-              alt=""
-            />
+            <img src="../../assets/produtos.png" alt="" />
           </Slide>
           <Slide>
-            <img
-              src="../../assets/produtos.png"
-
-              alt=""
-            />
+            <img src="../../assets/produtos.png" alt="" />
           </Slide>
           <Slide>
-            <img
-              src="../../assets/produtos.png"
-
-              alt=""
-            />
+            <img src="../../assets/produtos.png" alt="" />
           </Slide>
         </Carousel>
       </div>
@@ -121,10 +128,11 @@ export default {
 .bt-vittin {
   font-family: "Raleway Semibold", sans-serif;
   color: #fff;
-  font-size: 22px;
-  padding: 22px;
-  border-radius: 8px;
+  font-size: 19px;
+  height: 60px;
+  border-radius: 4px;
   background-color: #097a7f;
+  width: 240px;
   border: 0;
   transition: 0.3s;
 }
@@ -191,5 +199,4 @@ export default {
     padding: 10px;
   }
 }
-
 </style>

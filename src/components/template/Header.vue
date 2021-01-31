@@ -54,7 +54,7 @@
         <ul>
           <li class="active"><a href="/company">EMPRESA</a></li>
           <li><a href="/product">PRODUTOS</a></li>
-          <li><a href="#">CONTATO</a></li>
+          <li><a href="/contact">CONTATO</a></li>
         </ul>
       </nav>
       <nav

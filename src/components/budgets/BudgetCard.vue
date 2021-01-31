@@ -11,7 +11,7 @@
       </div>
       <div class="col-3 budget-align-center">
         <div class="row">
-          <label class="col">Quantidade</label>
+          <label class="col quant">Quantidade</label>
           <input class="col" type="text" />
         </div>
       </div>
@@ -35,9 +35,10 @@ export default {
   background-color: #ffffff;
   /* margin: 10px; */
   /* min-width: 247px; */
-  height: 130px;
+  height: 167px;
   margin-top: 15px;
   margin-bottom: 15px;
+  padding-top: 20px;
 }
 
 .budget-card a {
@@ -56,13 +57,19 @@ export default {
 }
 
 .budget-card img {
-  max-width: 150px;
+  max-width: 130px;
 }
 
 .budget-align-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.quant {
+  color: #4a4a4a;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
 }
 
 @media (max-width: 768px) {
