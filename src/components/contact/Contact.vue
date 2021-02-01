@@ -30,42 +30,39 @@
           <button class="bt-vittin shadow">Enviar</button>
         </div>
       </div>
+    </div>
 
+    <div class="col-sac">
+      <div class="col-12">
+        <PageTitle main="Dúvidas Frequentes" />
+      </div>
+      <div class="col-12">
+        <ul class="nav nav-pills nav-fill">
+          <li class="nav-item">
+            <a class="nav-link active btn-sac pt-sac" href="#">Como Comprar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active btn-sac" href="#"
+              >Política de Privacidade</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active btn-sac pt-sac" href="#"
+              >Polí­tica de Trocas</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active btn-sac" href="#">Polí­tica de Entrega</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active btn-sac" href="#"
+              >Polí­tica de Segurança</a
+            >
+          </li>
+        </ul>
       </div>
 
-      <div class="col-sac">
-        <div class="col-12">
-          <PageTitle main="Dúvidas Frequentes" />
-        </div>
-        <div class="col-12">
-          <ul class="nav nav-pills nav-fill">
-            <li class="nav-item">
-              <a class="nav-link active btn-sac pt-sac" href="#">Como Comprar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active btn-sac" href="#"
-                >Política de Privacidade</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active btn-sac pt-sac" href="#"
-                >Polí­tica de Trocas</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active btn-sac" href="#"
-                >Polí­tica de Entrega</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active btn-sac" href="#"
-                >Polí­tica de Segurança</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="weare-area text-p text-p-mobile txt-fs-16">
+      <div class="weare-area text-p text-p-mobile txt-fs-16">
         <p class="text-block shadow">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
@@ -97,48 +94,25 @@
           diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
           erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
           et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-          
         </p>
-      </div>
-      </div>
-
-      
-
-
-      <div class="container-fluid pt-2">
-      <PageTitle main="Contato" />
-      <div class="row">
-        <div class="col-6" style="padding-left: 80px; margin-top: 50px">
-          <input class="input-contact w-100 p-1 pl-2 mb-2" placeholder="Nome" />
-          <input
-            class="input-contact w-100 p-1 pl-2 mb-2"
-            placeholder="Telefone"
-          />
-          <input
-            class="input-contact w-100 p-1 pl-2 mb-2"
-            placeholder="Email"
-          />
-          <input
-            class="input-contact w-100 p-1 pl-2 mb-2"
-            placeholder="Assunto"
-          />
-        </div>
-        <div class="col-6 textarea-contact pl-1">
-          <textarea rows="7" cols="50" class="w-100">
-          Mensagem
-          </textarea>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12 text-center pt-4" style="margin-bottom: 90px">
-          <button class="bt-vittin shadow">Enviar</button>
-        </div>
-      </div>
-
       </div>
     </div>
 
+    <div class="container-fluid pt-2">
+      <div class="row">
+        <div class="col-6" style="margin-top: 80px;">
+          <p style="font-size: 40px; padding-left: 80px; font-weight: 700">
+            Localização
+          </p>
+          <p style="padding-left: 80px">
+            Rua Antônio Eustáquio Piazza, 3663, Tirol,<br />
+            Belo Horizonte / MG<br />
+            30662-050
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
