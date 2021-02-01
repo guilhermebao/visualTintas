@@ -1,7 +1,7 @@
 <template>
   <div class="budget-card">
     <div href="/product/1" class="row" @click="goToProduct">
-      <img class="col 2" :src="image" alt="image" />
+      <img class="col 2" :src="image" alt="image" style="margin-left: 40px;" />
 
       <div class="col-6 budget-align-center">
         <h5 class="">{{ main }}</h5>
@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="col-1 budget-align-center">
-        <i class="fa fa-trash-o fa-2x " aria-hidden="true"></i>
+        <i class="fa fa-trash-o fa-2x" style="cursor: pointer;" aria-hidden="true"></i>
       </div>
     </div>
   </div>
@@ -35,10 +35,11 @@ export default {
   background-color: #ffffff;
   /* margin: 10px; */
   /* min-width: 247px; */
+  border-radius: 4px;
   height: 167px;
   margin-top: 15px;
   margin-bottom: 15px;
-  padding-top: 20px;
+  padding-top: 33px;
 }
 
 .budget-card a {
