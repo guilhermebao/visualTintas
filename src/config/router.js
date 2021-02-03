@@ -9,6 +9,7 @@ import ProductList from '@/components/product/ProductList'
 import Product from '@/components/product/Product'
 import Budget from '@/components/budgets/Budget'
 import Contact from '@/components/contact/Contact'
+import BudgetList from '@/components/budgets/BudgetList'
 
 Vue.use(VueRouter)
 
@@ -46,6 +47,11 @@ const routes = [{
     name: 'budget',
     path: '/budget',
     component: Budget
+},
+{
+    name: 'budgets',
+    path: '/budgets',
+    component: BudgetList
 },
 {
     name: 'contact',

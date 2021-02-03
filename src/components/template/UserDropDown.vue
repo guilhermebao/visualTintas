@@ -11,7 +11,7 @@
       <router-link to="" class="my-2">
         V$ 0.00
       </router-link>
-      <router-link to="" class="my-2">
+      <router-link to="budgets" class="my-2">
         Meus Orçamentos
       </router-link>
        <router-link to="">

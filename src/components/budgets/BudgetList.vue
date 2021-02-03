@@ -1,129 +1,97 @@
 <template>
-  <div class="Account">
+  <div class="">
     <PageTitle main="Meus Orçamentos" />
-    <!-- <div class="form-group row">
-      <div class="input-group col">
-        <input
-          class="form-control border-right-0"
-          type="text"
-          v-model="search"
-          placeHolder="Buscar produtos"
-        />
-        <span class="input-group-append bg-white border-left-0">
-          <span class="input-group-text bg-transparent">
-            <i class="fa fa-search" aria-hidden="true"></i>
-          </span>
-        </span>
-      </div>
-
-      <div class="col"></div>
-      <select class=" form-control col" type="text" v-model="selected">
-        <option selected>Todos os produtos</option>
-        <option
-          v-for="(category, index) in categories"
+    <div class="budgets">
+      <div class="_input-grupo pt-4">
+        <BudgetsCard
+          v-for="(budget, index) in budgets"
           :key="index"
-          v-bind:value="category.value"
-        >
-          {{ category.text }}
-        </option>
-      </select>
-    </div> -->
-
-    <div class="container-fluid">
-        <div class="row">
-          <div class="container __flex align-items-center">
-            <ProductCard
-            v-for="(product, index) in products"
-            :key="index"
-            :main="product.title"
-            :sub="product.subTitle"
-            :image="product.image"
-          />
-          </div>
-        </div>
+          :number="budget.number"
+          :order="budget.order"
+          :date="budget.date"
+        />
+      </div>
     </div>
-    <!-- <div class="products-area">
-      <div class="container __flex align-items-center">
-        <ProductCard
-          v-for="(product, index) in products"
-          :key="index"
-          :main="product.title"
-          :sub="product.subTitle"
-          :image="product.image"
-        />
-      </div>
-    </div> -->
   </div>
 </template>
 
 <script>
 import PageTitle from "../template/PageTitle";
-import ProductCard from "./ProductCard";
-import axios from "@/axios"
+import BudgetsCard from "./BudgetsCard";
 
 export default {
-  name: "ProductList",
-  components: { PageTitle, ProductCard },
+  components: { PageTitle, BudgetsCard },
+  name: "BudgetList",
+  props: [],
   data: function() {
     return {
-      search: "",
-      selected: "Todos os produtos",
-      categories: [
-        { text: "Acessórios", value: "A" },
-        { text: "Colas", value: "B" },
-        { text: "Complementos", value: "C" },
-        { text: "Discos de Lixas", value: "C" },
-        { text: "Fitas", value: "C" },
-        { text: "Lixas", value: "C" },
-        { text: "Massas", value: "C" }
-      ],
-      products: [
+      budgets: [
         {
-          title: "Tinta",
-          subTitle: "250ml",
-          image:
-            "https://cdn.leroymerlin.com.br/products/tinta_latex_economica_plural_18l_89486915_5868_300x300.jpeg"
+          order: "1",
+          date: "04/05/1998",
+          number: "0001"
         },
         {
-          title: "Tinner",
-          subTitle: "250ml",
-          image:
-            "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTnRtY-ol6oRQUr9uNXi1uzi6ne7YmPPbulIGCB624_Ew1g5PG_2lXMiBP4vWlrDQ_fwfiOODKdL_QaSXiq8c-Qi8vb-BG7&usqp=CAE"
+          order: 2,
+          date: "00/00/2020",
+          number: "0002"
         },
-        // {
-        //   title: "Pincel",
-        //   subTitle: "Cerda Branca",
-        //   image:
-        //     "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSEoKHVJltjXHvCWQb83FzN15OYQr2qqcPfEiGaTy_27DANmvlX6mJ0yOGjV2KakHZf7KjXqxnQVdGJWn8WC_fZPETWglCmTHU24n0TalKt8k34kh21Ex9uZlNT&usqp=CAE"
-        // },
-        // {
-        //   title: "Cola",
-        //   subTitle: "250ml",
-        //   image:
-        //     "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQcVHFpSNNmRtUKVbbm1ekvSlQDJfGVAPZwnLS3t5ZciUkz9_7epBQgD-DnTJRBuzwWUfM2_DpcQi5ZDeZBXFdZMqMd9KU6gFrsr8dWaiGZZpe3EkqFIRLo84I&usqp=CAE"
-        // }
+        {
+          order: 3,
+          date: "02/04/2001",
+          number: "0003"
+        },
+        {
+          order: "4",
+          date: "00/00/0000",
+          number: "0004"
+        }
       ]
     };
-  }, mounted() {
-    axios.get('products').then(a => console.log(a))
   }
 };
 </script>
 
 <style>
-.products-area {
-  background-color: #f3f5f9;
+.budgets {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  flex-wrap: wrap;
+  background-color: #f3f5f9;
 }
-.__flex{
-  display: flex
+.budget-image {
 }
 
-@media (max-width: 375px) {
-  .__flex{
-  display: block
+._input-grupo {
+  padding-left: 80px;
+  padding-right: 80px;
 }
+
+@media (max-width: 768px) {
+  ._input-grupo {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.bt-budget {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  height: 60px;
+  border-radius: 4px;
+
+  width: 240px;
+  border: 0;
+  transition: 0.3s;
+}
+
+._on {
+  color: #fff;
+  background-color: #097a7f;
+}
+
+._off {
+  color: #001023;
+  background-color: #fff;
 }
 </style>
