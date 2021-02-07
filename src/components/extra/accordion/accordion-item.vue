@@ -1,5 +1,5 @@
 <template>
-  <li class="accordion__item" :class="{'cursor-pointer': !visible}">
+  <li class="accordion__item" :class="{ 'cursor-pointer': !visible }">
     <div
       class="row accordion__trigger"
       :class="{ accordion__trigger_active: visible }"
@@ -9,9 +9,11 @@
         <slot name="accordion-trigger"></slot>
       </div>
 
-      <div class="col-2 arrow text-center my-auto">
-        <span class="col" v-if="!visible">Mais informação</span>
-        <span class="col" v-else>Menos informação</span>
+      <div class="col-3 arrow text-center my-auto">
+        <span>
+          <span class="col tl16" v-if="!visible">Mais informação</span>
+          <span class="col tl16" v-else>Menos informação</span>
+        </span>
         <i
           :class="{ 'arrow-accordion': !visible }"
           class="fa fa-angle-up fa-lg"
@@ -42,13 +44,13 @@ export default {
   inject: ["Accordion"],
   data() {
     return {
-      index: null
+      index: null,
     };
   },
   computed: {
     visible() {
       return this.index == this.Accordion.active;
-    }
+    },
   },
   methods: {
     open() {
@@ -63,24 +65,23 @@ export default {
     },
     end(el) {
       el.style.height = "";
-    }
+    },
   },
   created() {
     this.index = this.Accordion.count++;
-  }
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .accordion__item {
-  padding: 10px 20px 10px 40px;
+  padding: 10px 10px 10px 30px;
   border-bottom: 1px solid #ebebeb;
   position: relative;
 }
 
 .accordion__content {
   padding-top: 20px;
-
 }
 
 .accordion-enter-active,
@@ -104,7 +105,7 @@ export default {
   transform: rotateZ(-180deg);
 }
 
-.cursor-pointer{
+.cursor-pointer {
   cursor: pointer;
 }
 </style>

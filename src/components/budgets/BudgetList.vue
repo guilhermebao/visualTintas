@@ -2,7 +2,13 @@
   <div class="">
     <PageTitle main="Meus Orçamentos" />
     <div class="budgets">
-      <div class="_input-grupo pt-4">
+      <div class="_img-card">
+        <h5 class="tl16 mt-3 ml-4 mb-4">Deseja enviar alguma imagem?</h5>
+        <div class="block-img mx-4">
+          <img class="my-4" src="../../assets/_image.png" />
+        </div>
+      </div>
+      <div class="_input-grupo pt-1">
         <BudgetsCard
           v-for="(budget, index) in budgets"
           :key="index"
@@ -93,5 +99,25 @@ export default {
 ._off {
   color: #001023;
   background-color: #fff;
+}
+
+._img-card {
+  background-color: #ffffff;
+  height: 204px;
+  margin-top: 15px;
+  border-radius: 3px;
+  margin-left: 80px;
+  margin-right: 80px;
+  cursor: pointer;
+}
+
+.block-img {
+  background-color: #F3F5F9;
+  margin: 10px;
+  text-align: center;
+  border-width: 1.5px;
+  border-radius: 3px;
+  border-style: dashed;
+  border-color: #ABABAB;
 }
 </style>

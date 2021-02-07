@@ -4,8 +4,8 @@
       <accordion-item>
         <template slot="accordion-trigger">
           <div class="row">
-            <h5 class="col my-auto">Pedido nº {{ number }}</h5>
-            <h6 class="col my-auto card-subtitle mb-2">{{ date }}</h6>
+            <h5 class="col my-auto tl16">Pedido nº {{ number }}</h5>
+            <h6 class="col my-auto card-subtitle mb-2 tl-sb16">{{ date }}</h6>
             <div class="col">
               <vue-step
                 :now-step="order"
@@ -18,15 +18,15 @@
         </template>
         <template slot="accordion-content">
           <div class="row">
-            <img class="col border" :src="entity.img" alt="image" />
-            <div class="col-4">
-              <h5>{{ entity.name }}</h5>
-              <h6>
+            <img class="border" style="margin-left: -24px; margin-bottom: 22px;" :src="entity.img" alt="image" />
+            <div class="col-6 mt-4 ml-5">
+              <h5 class="tl16">{{ entity.name }}</h5>
+              <h6 class="tl-sb16">
                 {{ entity.description }}
               </h6>
             </div>
             <div class="col text-right my-auto">
-              <h6 class="mb-2">Quantidade: 10</h6>
+              <h6 class="mb-2 tl-sb16 mr-4">Quantidade: 10</h6>
               <h6
                 v-if="order >= 3"
                 class="mb-2"
@@ -83,7 +83,7 @@ export default {
       entity: {
         name: "Tinner",
         description:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+          "Lorem Ipsum is simply dummy text of the printing.",
         img:
           "https://cdn.leroymerlin.com.br/products/tinta_latex_economica_plural_18l_89486915_5868_300x300.jpeg"
       }
@@ -97,10 +97,28 @@ export default {
   background-color: #ffffff;
   /* height: 130px; */
   margin-top: 15px;
+  border-radius: 3px;
   margin-bottom: 15px;
 }
 
 .budgets-card img {
-  max-width: 150px;
+  max-width: 130px;
+  max-height: 130px;
+}
+
+.tl16 {
+  font-size: 16px;
+}
+
+.tl-sb16 {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: #4A4A4A;
+}
+
+.v-step-item-label {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: #4A4A4A;
 }
 </style>
